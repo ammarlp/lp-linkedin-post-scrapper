@@ -1,0 +1,19 @@
+{
+  "name": "linkedin-post-scraper",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev:server": "node --watch --env-file=.env.local server.js",
+    "dev:client": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "start": "node --env-file=.env.local server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongoose": "^8.13.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
